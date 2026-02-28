@@ -1,0 +1,67 @@
+#EXTM3U x-tvg-url="https://live.fanmingming.com/e.xml"
+#EXTINF:-1 tvg-name="Plus综合" tvg-logo="https://live.fanmingming.com/tv/Plus综合.png" group-title="",Plus综合
+http://app.junnian.xyz/pitv.php?user=666123&pass=666123&type=mp4&id=j2_twn
+#EXTINF:-1 tvg-name="凤凰中文" tvg-logo="https://live.fanmingming.com/tv/凤凰中文.png" group-title="",凤凰中文
+http://app.junnian.xyz/pitv.php?user=666123&pass=666123&type=mp4&id=phoenixtv_hd
+#EXTINF:-1 tvg-name="凤凰资讯" tvg-logo="https://live.fanmingming.com/tv/凤凰资讯.png" group-title="",凤凰资讯
+http://app.junnian.xyz/pitv.php?user=666123&pass=666123&type=mp4&id=phoenixinfo_hd
+#EXTINF:-1 tvg-name="凤凰香港" tvg-logo="https://live.fanmingming.com/tv/凤凰香港.png" group-title="",凤凰香港
+http://app.junnian.xyz/pitv.php?user=666123&pass=666123&type=mp4&id=hkphoenix_twn
+#EXTINF:-1 tvg-name="中天新闻" tvg-logo="https://live.fanmingming.com/tv/中天新闻.png" group-title="",中天新闻
+http://app.junnian.xyz/pitv.php?user=666123&pass=666123&type=mp4&id=ctinews
+#EXTINF:-1 tvg-name="有线新闻" tvg-logo="https://live.fanmingming.com/tv/有线新闻.png" group-title="",有线新闻
+http://app.junnian.xyz/pitv.php?user=666123&pass=666123&type=mp4&id=hoycaijing_twn
+#EXTINF:-1 tvg-name="无线新闻" tvg-logo="https://live.fanmingming.com/tv/无线新闻.png" group-title="",无线新闻
+http://app.junnian.xyz/pitv.php?user=666123&pass=666123&type=mp4&id=inews_twn
+#EXTINF:-1 tvg-name="无线翡翠" tvg-logo="https://live.fanmingming.com/tv/无线翡翠.png" group-title="",无线翡翠
+http://app.junnian.xyz/pitv.php?user=666123&pass=666123&type=mp4&id=jade_twn
+#EXTINF:-1 tvg-name="无线翡翠" tvg-logo="https://live.fanmingming.com/tv/无线翡翠.png" group-title="",无线翡翠
+http://app.junnian.xyz/pitv.php?user=666123&pass=666123&type=mp4&id=Jade_xue
+#EXTINF:-1 tvg-name="无线翡翠" tvg-logo="https://live.fanmingming.com/tv/无线翡翠.png" group-title="",无线翡翠
+http://app.junnian.xyz/pitv.php?user=666123&pass=666123&type=mp4&id=Tvbjade
+#EXTINF:-1 tvg-name="无线华丽粤" tvg-logo="https://live.fanmingming.com/tv/无线华丽粤.png" group-title="",无线华丽粤
+http://app.junnian.xyz/pitv.php?user=666123&pass=666123&type=mp4&id=Wlt
+#EXTINF:-1 tvg-name="无线明珠" tvg-logo="https://live.fanmingming.com/tv/无线明珠.png" group-title="",无线明珠
+http://app.junnian.xyz/pitv.php?user=666123&pass=666123&type=mp4&id=pearl_twn
+#EXTINF:-1 tvg-name="无线娱乐" tvg-logo="https://live.fanmingming.com/tv/无线娱乐.png" group-title="",无线娱乐
+http://app.junnian.xyz/pitv.php?user=666123&pass=666123&type=mp4&id=Tvbentertainment
+#EXTINF:-1 tvg-name="千禧经典" tvg-logo="https://live.fanmingming.com/tv/千禧经典.png" group-title="",千禧经典
+http://app.junnian.xyz/pitv.php?user=666123&pass=666123&type=mp4&id=Tvbclassic
+#EXTINF:-1 tvg-name="VIUTV'粤" tvg-logo="https://live.fanmingming.com/tv/VIUTV'粤.png" group-title="",VIUTV'粤
+http://app.junnian.xyz/pitv.php?user=666123&pass=666123&type=mp4&id=viu1_twn
+#EXTINF:-1 tvg-name="VIUTV英" tvg-logo="https://live.fanmingming.com/tv/VIUTV英.png" group-title="",VIUTV英
+http://app.junnian.xyz/pitv.php?user=666123&pass=666123&type=mp4&id=viusix_twn
+#EXTINF:-1 tvg-name="RTHK-31" tvg-logo="https://live.fanmingming.com/tv/RTHK-31.png" group-title="",RTHK-31
+http://app.junnian.xyz/pitv.php?user=666123&pass=666123&type=mp4&id=rhk31_twn
+#EXTINF:-1 tvg-name="RTHK-32" tvg-logo="https://live.fanmingming.com/tv/RTHK-32.png" group-title="",RTHK-32
+http://app.junnian.xyz/pitv.php?user=666123&pass=666123&type=mp4&id=rhk32_twn
+#EXTINF:-1 tvg-name="天映频道粤" tvg-logo="https://live.fanmingming.com/tv/天映频道粤.png" group-title="",天映频道粤
+http://app.junnian.xyz/pitv.php?user=666123&pass=666123&type=mp4&id=ctv18_twn
+#EXTINF:-1 tvg-name="天映频道国" tvg-logo="https://live.fanmingming.com/tv/天映频道国.png" group-title="",天映频道国
+http://app.junnian.xyz/pitv.php?user=666123&pass=666123&type=mp4&id=Celestial
+#EXTINF:-1 tvg-name="天映频道" tvg-logo="https://live.fanmingming.com/tv/天映频道.png" group-title="",天映频道
+http://app.junnian.xyz/pitv.php?user=666123&pass=666123&type=mp4&id=Celestialindo
+#EXTINF:-1 tvg-name="天映经典" tvg-logo="https://live.fanmingming.com/tv/天映经典.png" group-title="",天映经典
+http://app.junnian.xyz/pitv.php?user=666123&pass=666123&type=mp4&id=Celestial2
+#EXTINF:-1 tvg-name="美亚电影" tvg-logo="https://live.fanmingming.com/tv/美亚电影.png" group-title="",美亚电影
+http://app.junnian.xyz/pitv.php?user=666123&pass=666123&type=mp4&id=meiyamovie_twn
+#EXTINF:-1 tvg-name="龙祥电影" tvg-logo="https://live.fanmingming.com/tv/龙祥电影.png" group-title="",龙祥电影
+http://app.junnian.xyz/pitv.php?user=666123&pass=666123&type=mp4&id=lungxiangtime_twn
+#EXTINF:-1 tvg-name="纬来电影" tvg-logo="https://live.fanmingming.com/tv/纬来电影.png" group-title="",纬来电影
+http://app.junnian.xyz/pitv.php?user=666123&pass=666123&type=mp4&id=videolandmovie
+#EXTINF:-1 tvg-name="新加CHU" tvg-logo="https://live.fanmingming.com/tv/新加CHU.png" group-title="",新加CHU
+http://app.junnian.xyz/pitv.php?user=666123&pass=666123&type=mp4&id=ChannelU
+#EXTINF:-1 tvg-name="新加CH5" tvg-logo="https://live.fanmingming.com/tv/新加CH5.png" group-title="",新加CH5
+http://app.junnian.xyz/pitv.php?user=666123&pass=666123&type=mp4&id=Channel5HD
+#EXTINF:-1 tvg-name="新加CH8" tvg-logo="https://live.fanmingming.com/tv/新加CH8.png" group-title="",新加CH8
+http://app.junnian.xyz/pitv.php?user=666123&pass=666123&type=mp4&id=Channel8HD
+#EXTINF:-1 tvg-name="Astr爱奇" tvg-logo="https://live.fanmingming.com/tv/Astr爱奇.png" group-title="",Astr爱奇
+http://app.junnian.xyz/pitv.php?user=666123&pass=666123&type=mp4&id=Qiyi
+#EXTINF:-1 tvg-name="AstrQJ国" tvg-logo="https://live.fanmingming.com/tv/AstrQJ国.png" group-title="",AstrQJ国
+http://app.junnian.xyz/pitv.php?user=666123&pass=666123&type=mp4&id=Quanjia
+#EXTINF:-1 tvg-name="astroaod" tvg-logo="https://live.fanmingming.com/tv/astroaod.png" group-title="",astroaod
+http://app.junnian.xyz/pitv.php?user=666123&pass=666123&type=mp4&id=Aodhd
+#EXTINF:-1 tvg-name="Astroaec" tvg-logo="https://live.fanmingming.com/tv/Astroaec.png" group-title="",Astroaec
+http://app.junnian.xyz/pitv.php?user=666123&pass=666123&type=mp4&id=AEC
+#EXTINF:-1 tvg-name="Astr欢喜" tvg-logo="https://live.fanmingming.com/tv/Astr欢喜.png" group-title="",Astr欢喜
+http://app.junnian.xyz/pitv.php?user=666123&pass=666123&type=mp4&id=Huahee
