@@ -1,7 +1,7 @@
 #EXTM3U
 央视,#genre#
 #EXTINF:-1,tvg-id="CCTV-1" tvg-name="CCTV-1" tvg-logo="https://raw.githubusercontent.com/baibai132/live/refs/heads/main/tv/CCTV1.png" group-title="中央电视台",CCTV-1综合
-http://us.huanqiuzhibo.cn/huanqiusmart.php?id=Axn/playlist.m3u8
+https://hlsliveali-cdn.ysp.cctv.cn/BA822B3762F0FEF7021DD3B71F70FDA88E92DC84A585D9A7E66BDEDDAB925C21A532B9B5549B7A5DA095E3032AE46595D934BE8938F02B3621D4CC180EC8024716E612E4C410031D6524AEB53B93818D5343F8634680031B267E3A33EBB4B80D6D88AA76EB560280ED0081BB4454E642/2024078203_web.m3u8?from=player&svrtime=1772330668&pid=600001859&cdn=5506&revoi=&app_id=519748109&guid=mjehkykw_6629o3kxi3w&ysign=599af25c3f63f771da568a6e5de5aa67&ytime=1772330668&ytype=1
 
 #EXTINF:-1,tvg-id="CCTV-2" tvg-name="CCTV-2" tvg-logo="https://raw.githubusercontent.com/baibai132/live/refs/heads/main/tv/CCTV2.png" group-title="中央电视台",CCTV-2财经
 http://74.91.26.218:82/live/cctv2hd.m3u8
