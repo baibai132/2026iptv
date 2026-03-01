@@ -1,7 +1,7 @@
 #EXTM3U
 央视,#genre#
 #EXTINF:-1,tvg-id="CCTV-1" tvg-name="CCTV-1" tvg-logo="https://raw.githubusercontent.com/baibai132/live/refs/heads/main/tv/CCTV1.png" group-title="中央电视台",CCTV-1综合
-http://74.91.26.218:82/live/cctv1hd.m3u8
+http://us.huanqiuzhibo.cn/huanqiusmart.php?id=Axn/playlist.m3u8
 
 #EXTINF:-1,tvg-id="CCTV-2" tvg-name="CCTV-2" tvg-logo="https://raw.githubusercontent.com/baibai132/live/refs/heads/main/tv/CCTV2.png" group-title="中央电视台",CCTV-2财经
 http://74.91.26.218:82/live/cctv2hd.m3u8
