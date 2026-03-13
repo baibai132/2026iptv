@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>全频道电视直播 · 极视面板</title>
+    <style>
+        /* === 全局样式 (完全保留原样式) === */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+            background: #0a0c10;
+        }
+
+        /* 顶部标题面板 - 圆角5px */
+        .title-panel {
+            width: 100%;
+            background: rgba(16, 20, 28, 0.75);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-radius: 5px;
+            border: 1px solid rgba(255, 215, 0, 0.3);
+            padding: 16px 28px;
+            box-shadow: 0 10px 25px -8px #00000080;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .title {
+            font-size: 1.6rem;
+            font-weight: 600;
+            color: #ffd966;
+            text-shadow: 0 0 8px #ffd90066;
+            letter-spacing: 1px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+        /* 右侧时间区域 - 包含LIVE和完整日期时间 */
+        .header-datetime {
+            color: #b5b9c4;
+            font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        .live-badge {
+            background: #ffd966;
+            color: #0a0c10;
+            padding: 5px 15px;
+            border-radius: 5px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            white-space: nowrap;
+        }
+        .full-datetime {
+            background: rgba(255,215,0,0.1);
+            padding: 5px 18px;
+            border-radius: 5px;
+            border: 1px solid rgba(255,215,0,0.3);
+            color: #ffffff;
+            font-weight: 400;
+            font-size: 1.1rem;
+            white-space: nowrap;
+            display: inline-flex;
+            gap: 8px;
+            letter-spacing: 0.5px;
+        }
+
+        /* 主容器：固定宽高，左右锁定 */
+        .dashboard {
+            width: 100%;
+            height: 780px;
+            max-height: 82vh;
+            display: flex;
+            gap: 18px;
+            background: transparent;
+        }
+
+        /* ========= 左侧锁区 视频变大 ========= */
+        .left-locked {
+            flex: 0 0 1200px;      
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            background: transparent;
+        }
+
+        /* 视频窗口 - 圆角5px */
+        .video-container {
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            background: #000;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 20px 30px -10px rgba(0, 0, 0, 0.9);
+            border: 1px solid rgba(255, 215, 0, 0.3);
+            flex-shrink: 0;
+            height: 100%;
+        }
+        .video-container video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            background: #0e1219;
+        }
+
+        /* ========= 右侧锁区（节目列表 保持320px） ========= */
+        .right-locked {
+            flex: 0 0 320px;
+            height: 100%;
+            background: rgba(16, 20, 28, 0.8);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-radius: 5px;
+            border: 1px solid rgba(255, 215, 0, 0.25);
+            padding: 20px 12px 16px 12px;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 25px 40px -12px #000;
+        }
+
+        /* 选项卡标签栏 - 按钮圆角5px */
+        .tab-bar {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin-bottom: 16px;
+            flex-shrink: 0;
+            justify-content: center;
+        }
+        .tab-btn {
+            background: rgba(30, 35, 45, 0.8);
+            border: 1px solid #3f424b;
+            color: #b5b9c4;
+            font-size: 0.9rem;
+            font-weight: 500;
+            padding: 8px 12px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.2s;
+            letter-spacing: 0.3px;
+            backdrop-filter: blur(5px);
+            flex: 0 1 auto;
+        }
+        .tab-btn.active {
+            background: #ffd966;
+            border-color: #ffd966;
+            color: #0a0c10;
+            font-weight: 600;
+            box-shadow: 0 0 12px #ffd966;
+        }
+
+        /* 频道网格 */
+        .channel-grid {
+            flex: 1;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+            gap: 8px;
+            align-content: start;
+            overflow-y: auto;
+            padding: 4px 2px 8px 2px;
+            scrollbar-width: thin;
+            scrollbar-color: #ffd966 #2a2e3a;
+            min-height: 0;
+        }
+        .channel-grid::-webkit-scrollbar {
+            width: 4px;
+        }
+        .channel-grid::-webkit-scrollbar-track {
+            background: #1e212a;
+            border-radius: 5px;
+        }
+        .channel-grid::-webkit-scrollbar-thumb {
+            background: #ffd966;
+            border-radius: 5px;
+        }
+
+        /* 频道卡片 - 圆角5px，flex垂直居中 */
+        .channel-card {
+            background: rgba(20, 25, 34, 0.8);
+            backdrop-filter: blur(4px);
+            border: 1px solid #3a3f4b;
+            border-radius: 5px;
+            padding: 8px 4px;
+            text-align: center;
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: #e0e4f0;
+            cursor: pointer;
+            transition: 0.15s;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            box-shadow: 0 4px 6px #00000040;
+            /* flex居中 */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 40px;
+            line-height: 1.2;
+        }
+        .channel-card:hover {
+            border-color: #ffd966;
+            color: #ffd966;
+            background: #1f2533;
+            transform: scale(1.02);
+        }
+        .channel-card.active {
+            background: #ffd966;
+            border-color: #ffd966;
+            color: #0f1219;
+            font-weight: 600;
+            box-shadow: 0 0 12px #ffbf00;
+        }
+
+        /* 底部文本居中样式 */
+        .footer-text {
+            width: 100%;
+            text-align: center; /* 文本水平居中 */
+            margin-top: 20px; /* 与上方内容保持间距 */
+            padding: 12px 0; /* 上下内边距，增加点击区域 */
+            color: #888c98; /* 浅灰色文字，适配深色背景 */
+            font-size: 0.85rem; /* 小号字体，不突兀 */
+            letter-spacing: 0.5px; /* 字间距优化 */
+            line-height: 1.6; /* 行高优化，提升可读性 */
+        }
+    </style>
+</head>
+<body>
+<div class="app-wrapper">
+    <!-- 顶部标题面板 -->
+    <div class="title-panel">
+        <div class="title">
+            📺 电视直播控制面板
+        </div>
+        <div class="header-datetime">
+            <span class="live-badge">LIVE</span>
+            <span class="full-datetime" id="headerFullDateTime">2025-03-13 星期四 20:18:45</span>
+        </div>
+    </div>
+
+    <!-- 主面板：左侧锁区视频 + 右侧锁区列表 -->
+    <div class="dashboard">
+        <!-- 左侧锁区：只有视频 (1200px固定) -->
+        <div class="left-locked">
+            <div class="video-container">
+                <video id="videoPlayer" autoplay playsinline controls muted></video>
+            </div>
+        </div>
+
+        <!-- 右侧锁区：节目列表 (320px固定) -->
+        <div class="right-locked">
+            <div class="tab-bar" id="tabContainer">
+                <button class="tab-btn active" data-group="cctv">央视</button>
+                <button class="tab-btn" data-group="cgtn">CGTN</button>
+                <button class="tab-btn" data-group="pay">付费</button>
+                <button class="tab-btn" data-group="weishi">卫视</button>
+                <button class="tab-btn" data-group="asia">日韩亚洲国际</button>
+            </div>
+            <!-- 五个网格容器 (显示隐藏由JS控制) -->
+            <div id="cctvGroup" class="channel-grid" style="display: grid;"></div>
+            <div id="cgtnGroup" class="channel-grid" style="display: none;"></div>
+            <div id="payGroup" class="channel-grid" style="display: none;"></div>
+            <div id="weishiGroup" class="channel-grid" style="display: none;"></div>
+            <div id="asiaGroup" class="channel-grid" style="display: none;"></div>
+        </div>
+    </div>
+    
+    <!-- 底部声明：居中显示 -->
+    <div class="footer-text">
+        本站内容源自互联网，如有内容侵犯了你的权益，请联系删除相关内容，联系邮箱：157903109@163.com <br/>© 2026 By <br/>
+    </div>
+</div>
+
+<script>
+(function() {
+    "use strict";
+
+    // ---------- 1. 动态时间 (精确到秒) ----------
+    function updateAllTimes() {
+        const now = new Date();
+        const y = now.getFullYear();
+        const m = String(now.getMonth() + 1).padStart(2, '0');
+        const d = String(now.getDate()).padStart(2, '0');
+        const weekdays = ['星期日', '星期一', '星期二', '星期三', '星期四', '星期五', '星期六'];
+        const week = weekdays[now.getDay()];
+        const hour = String(now.getHours()).padStart(2, '0');
+        const minute = String(now.getMinutes()).padStart(2, '0');
+        const second = String(now.getSeconds()).padStart(2, '0');
+        const fullStr = `${y}-${m}-${d} ${week} ${hour}:${minute}:${second}`;
+        const fullElem = document.getElementById('headerFullDateTime');
+        if (fullElem) fullElem.innerText = fullStr;
+    }
+    setInterval(updateAllTimes, 1000);
+    updateAllTimes();
+
+    // ---------- 2. 视频元素 ----------
+    const video = document.getElementById('videoPlayer');
+
+    // 播放频道函数 (统一处理播放、错误捕获、高亮)
+    function playChannel(channelName, url) {
+        if (!url) return;
+        video.src = url;
+        // 尝试播放，忽略可能的自动播放错误（有些浏览器需要用户交互）
+        const playPromise = video.play();
+        if (playPromise !== undefined) {
+            playPromise.catch(e => {
+                console.log('自动播放被浏览器阻止，等待用户交互后播放', e);
+                // 不显示错误，保持静默
+            });
+        }
+        // 高亮当前频道
+        document.querySelectorAll('.channel-card').forEach(el => el.classList.remove('active'));
+        document.querySelectorAll('.channel-card').forEach(el => {
+            if (el.getAttribute('data-name') === channelName) {
+                el.classList.add('active');
+            }
+        });
+    }
+
+    // ---------- 3. 频道数据 ----------
+    const BASE = 'http://223.95.198.3:8000/hls';
+    const channels = [
+        // 央视
+        { name: 'CCTV-1', url: `${BASE}/1/index.m3u8`, group: 'cctv' },
+        { name: 'CCTV-2', url: `${BASE}/2/index.m3u8`, group: 'cctv' },
+        { name: 'CCTV-3', url: `${BASE}/3/index.m3u8`, group: 'cctv' },
+                { name: 'CCTV-4', url: `${BASE}/4/index.m3u8`, group: 'cctv' },
+        { name: 'CCTV-5', url: `${BASE}/5/index.m3u8`, group: 'cctv' },
+        { name: 'CCTV-5+', url: `${BASE}/23/index.m3u8`, group: 'cctv' },
+        { name: 'CCTV-6', url: `${BASE}/6/index.m3u8`, group: 'cctv' },
+        { name: 'CCTV-7', url: `${BASE}/7/index.m3u8`, group: 'cctv' },
+        { name: 'CCTV-8', url: `${BASE}/8/index.m3u8`, group: 'cctv' },
+        { name: 'CCTV-9', url: `${BASE}/9/index.m3u8`, group: 'cctv' },
+        { name: 'CCTV-10', url: `${BASE}/10/index.m3u8`, group: 'cctv' },
+        { name: 'CCTV-11', url: `${BASE}/11/index.m3u8`, group: 'cctv' },
+        { name: 'CCTV-12', url: `${BASE}/12/index.m3u8`, group: 'cctv' },
+        { name: 'CCTV-13', url: `${BASE}/13/index.m3u8`, group: 'cctv' },
+        { name: 'CCTV-14', url: `${BASE}/14/index.m3u8`, group: 'cctv' },
+        { name: 'CCTV-15', url: `${BASE}/15/index.m3u8`, group: 'cctv' },
+        { name: 'CCTV-16-HD', url: `${BASE}/16/index.m3u8`, group: 'cctv' },
+        { name: 'CCTV-16(4K)', url: `${BASE}/66/index.m3u8`, group: 'cctv' },
+        { name: 'CCTV-17', url: `${BASE}/17/index.m3u8`, group: 'cctv' },
+        { name: 'CCTV-4K', url: `${BASE}/101/index.m3u8`, group: 'cctv' },
+        { name: 'CCTV-8K', url: `${BASE}/102/index.m3u8`, group: 'cctv' },
+        // CGTN
+        { name: 'CGTN', url: `${BASE}/18/index.m3u8`, group: 'cgtn' },
+        { name: 'CGTN法语', url: `${BASE}/19/index.m3u8`, group: 'cgtn' },
+        { name: 'CGTN俄语', url: `${BASE}/20/index.m3u8`, group: 'cgtn' },
+        { name: 'CGTN阿语', url: `${BASE}/21/index.m3u8`, group: 'cgtn' },
+        { name: 'CGTN西语', url: `${BASE}/22/index.m3u8`, group: 'cgtn' },
+        { name: 'CGTN纪录', url: `${BASE}/24/index.m3u8`, group: 'cgtn' },
+        // 付费
+        { name: '风云剧场', url: `${BASE}/25/index.m3u8`, group: 'pay' },
+        { name: '第一剧场', url: `${BASE}/26/index.m3u8`, group: 'pay' },
+        { name: '怀旧剧场', url: `${BASE}/27/index.m3u8`, group: 'pay' },
+        { name: '世界地理', url: `${BASE}/28/index.m3u8`, group: 'pay' },
+        { name: '风云音乐', url: `${BASE}/29/index.m3u8`, group: 'pay' },
+        { name: '兵器科技', url: `${BASE}/30/index.m3u8`, group: 'pay' },
+        { name: '风云足球', url: `${BASE}/31/index.m3u8`, group: 'pay' },
+        { name: '高尔夫·网球', url: `${BASE}/32/index.m3u8`, group: 'pay' },
+        { name: '女性时尚', url: `${BASE}/33/index.m3u8`, group: 'pay' },
+        { name: '文化精品', url: `${BASE}/34/index.m3u8`, group: 'pay' },
+        { name: '央视台球', url: `${BASE}/35/index.m3u8`, group: 'pay' },
+        { name: '电视指南', url: `${BASE}/54/index.m3u8`, group: 'pay' },
+        { name: '卫生健康', url: `${BASE}/55/index.m3u8`, group: 'pay' },
+        // 卫视
+        { name: '北京卫视', url: `${BASE}/36/index.m3u8`, group: 'weishi' },
+        { name: '江苏卫视', url: `${BASE}/38/index.m3u8`, group: 'weishi' },
+        { name: '东方卫视', url: `${BASE}/37/index.m3u8`, group: 'weishi' },
+        { name: '浙江卫视', url: `${BASE}/39/index.m3u8`, group: 'weishi' },
+        { name: '湖南卫视', url: `${BASE}/40/index.m3u8`, group: 'weishi' },
+        { name: '湖北卫视', url: `${BASE}/41/index.m3u8`, group: 'weishi' },
+        { name: '广东卫视', url: `${BASE}/43/index.m3u8`, group: 'weishi' },
+        { name: '广西卫视', url: `${BASE}/50/index.m3u8`, group: 'weishi' },
+        { name: '黑龙江卫视', url: `${BASE}/44/index.m3u8`, group: 'weishi' },
+        { name: '海南卫视', url: `${BASE}/51/index.m3u8`, group: 'weishi' },
+        { name: '重庆卫视', url: `${BASE}/46/index.m3u8`, group: 'weishi' },
+        { name: '深圳卫视', url: `${BASE}/53/index.m3u8`, group: 'weishi' },
+        { name: '四川卫视', url: `${BASE}/48/index.m3u8`, group: 'weishi' },
+        { name: '河南卫视', url: `${BASE}/42/index.m3u8`, group: 'weishi' },
+        { name: '东南卫视', url: `${BASE}/49/index.m3u8`, group: 'weishi' },
+        { name: '贵州卫视', url: `${BASE}/52/index.m3u8`, group: 'weishi' },
+        { name: '江西卫视', url: `${BASE}/45/index.m3u8`, group: 'weishi' },
+        { name: '辽宁卫视', url: `${BASE}/47/index.m3u8`, group: 'weishi' },
+        { name: '安徽卫视', url: `${BASE}/56/index.m3u8`, group: 'weishi' },
+        { name: '河北卫视', url: `${BASE}/57/index.m3u8`, group: 'weishi' },
+        { name: '山东卫视', url: `${BASE}/58/index.m3u8`, group: 'weishi' },
+        { name: '天津卫视', url: `${BASE}/59/index.m3u8`, group: 'weishi' },
+        { name: '吉林卫视', url: `${BASE}/60/index.m3u8`, group: 'weishi' },
+        { name: '陕西卫视', url: `${BASE}/61/index.m3u8`, group: 'weishi' },
+        { name: '宁夏卫视', url: `${BASE}/62/index.m3u8`, group: 'weishi' },
+        { name: '内蒙古卫视', url: `${BASE}/63/index.m3u8`, group: 'weishi' },
+        { name: '云南卫视', url: `${BASE}/64/index.m3u8`, group: 'weishi' },
+        { name: '山西卫视', url: `${BASE}/65/index.m3u8`, group: 'weishi' },
+        { name: '青海卫视', url: `${BASE}/67/index.m3u8`, group: 'weishi' },
+        { name: '西藏卫视', url: `${BASE}/68/index.m3u8`, group: 'weishi' },
+        { name: '中国教育', url: `${BASE}/69/index.m3u8`, group: 'weishi' },
+        { name: '新疆卫视', url: `${BASE}/70/index.m3u8`, group: 'weishi' },
+        { name: '香港卫视', url: `${BASE}/71/index.m3u8`, group: 'weishi' },
+        // 日韩亚洲国际
+        { name: 'NHK World', url: `${BASE}/200/index.m3u8`, group: 'asia' },
+        { name: 'NHK General', url: `${BASE}/201/index.m3u8`, group: 'asia' },
+        { name: 'Nippon TV', url: `${BASE}/202/index.m3u8`, group: 'asia' },
+        { name: 'TV Asahi', url: `${BASE}/203/index.m3u8`, group: 'asia' },
+        { name: 'TBS', url: `${BASE}/204/index.m3u8`, group: 'asia' },
+        { name: 'TV Tokyo', url: `${BASE}/205/index.m3u8`, group: 'asia' },
+        { name: 'Fuji TV', url: `${BASE}/206/index.m3u8`, group: 'asia' },
+        { name: 'KBS World', url: `${BASE}/210/index.m3u8`, group: 'asia' },
+        { name: 'KBS 1TV', url: `${BASE}/211/index.m3u8`, group: 'asia' },
+        { name: 'KBS 2TV', url: `${BASE}/212/index.m3u8`, group: 'asia' },
+        { name: 'MBC TV', url: `${BASE}/213/index.m3u8`, group: 'asia' },
+        { name: 'SBS TV', url: `${BASE}/214/index.m3u8`, group: 'asia' },
+        { name: 'tvN', url: `${BASE}/215/index.m3u8`, group: 'asia' },
+        { name: 'JTBC', url: `${BASE}/216/index.m3u8`, group: 'asia' },
+        { name: 'Arirang', url: `${BASE}/217/index.m3u8`, group: 'asia' },
+        { name: 'TVB翡翠', url: `${BASE}/220/index.m3u8`, group: 'asia' },
+        { name: 'TVB明珠', url: `${BASE}/221/index.m3u8`, group: 'asia' },
+        { name: '凤凰中文', url: `${BASE}/222/index.m3u8`, group: 'asia' },
+        { name: '凤凰资讯', url: `${BASE}/223/index.m3u8`, group: 'asia' },
+        { name: '星空卫视', url: `${BASE}/224/index.m3u8`, group: 'asia' },
+        { name: 'Channel NewsAsia', url: `${BASE}/225/index.m3u8`, group: 'asia' },
+        { name: 'HBO亚洲', url: `${BASE}/226/index.m3u8`, group: 'asia' },
+    ];
+
+    // ---------- 4. 渲染分组 ----------
+    function renderGroup(groupId, groupName) {
+        const container = document.getElementById(groupId);
+        if (!container) return;
+        container.innerHTML = '';
+        const filtered = channels.filter(c => c.group === groupName);
+        filtered.forEach(ch => {
+            const card = document.createElement('div');
+            card.className = 'channel-card';
+            card.setAttribute('data-name', ch.name);
+            card.innerText = ch.name;
+            card.onclick = () => playChannel(ch.name, ch.url);
+            container.appendChild(card);
+        });
+    }
+
+    // 执行所有分组渲染
+    renderGroup('cctvGroup', 'cctv');
+    renderGroup('cgtnGroup', 'cgtn');
+    renderGroup('payGroup', 'pay');
+    renderGroup('weishiGroup', 'weishi');
+    renderGroup('asiaGroup', 'asia');
+
+    // ---------- 5. 核心：打开网页自动播放 CCTV-1 ----------
+    function autoPlayCCTV1() {
+        const cctv1 = channels.find(c => c.name === 'CCTV-1');
+        if (cctv1) {
+            // 立即设置并播放
+            playChannel(cctv1.name, cctv1.url);
+            
+            // 兼容处理：多轮尝试 + 交互触发
+            const retryPlay = () => {
+                if (video.paused && video.src) {
+                    video.play().catch(() => {});
+                }
+            };
+            // 1秒后重试一次
+            setTimeout(retryPlay, 1000);
+            // 监听页面点击事件，触发播放
+            document.addEventListener('click', retryPlay, { once: true });
+        }
+    }
+    autoPlayCCTV1();
+
+    // ---------- 6. 选项卡切换逻辑 ----------
+    document.querySelectorAll('.tab-btn').forEach(btn => {
+        btn.addEventListener('click', function() {
+            // 移除所有激活态
+            document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+            // 激活当前按钮
+            this.classList.add('active');
+            // 隐藏所有分组
+            document.querySelectorAll('.channel-grid').forEach(grid => grid.style.display = 'none');
+            // 显示对应分组
+            const groupId = `${this.dataset.group}Group`;
+            const targetGrid = document.getElementById(groupId);
+            if (targetGrid) {
+                targetGrid.style.display = 'grid';
+            }
+        });
+    });
+})();
+</script>
+</body>
+</html>
