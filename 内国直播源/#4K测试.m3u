@@ -1,9 +1,9 @@
 #EXTM3U x-tvg-url="https://11.112114.xyz/pp.xml"
-#EXTINF:-1 tvg-id="CCTV4-4K" tvg-name="CCTV4" tvg-logo="https://11.112114.xyz/logo/CCTV4.png" group-title="4K测试",CCTV4-4K
+#EXTINF:-1 tvg-id="CCTV4-4K" tvg-name="CCTV4-4K" tvg-logo="https://11.112114.xyz/logo/CCTV4.png" group-title="4K测试",CCTV4-4K
 http://www.rogerxlj.top:9998/rtp/233.18.204.188:5140
 #EXTINF:-1 tvg-id="CCTV-4-4K" tvg-name="CCTV-4-4K" tvg-logo="https://11.112114.xyz/logo/CCTV-4-4K.png" group-title="4K测试",CCTV-4-4K
 http://www.rogerxlj.top:9998/rtp/233.18.204.204:5140
-#EXTINF:-1 tvg-id="CCTV16-4K" tvg-name="CCTV1" tvg-logo="https://11.112114.xyz/logo/CCTV1.png" group-title="4K测试",CCTV16-4K
+#EXTINF:-1 tvg-id="CCTV16-4K" tvg-name="CCTV16-4K" tvg-logo="https://11.112114.xyz/logo/CCTV1.png" group-title="4K测试",CCTV16-4K
 http://www.rogerxlj.top:9998/rtp/233.18.204.114:5140
 #EXTINF:-1 tvg-id="多彩文体4K" tvg-name="多彩文体4K" tvg-logo="https://11.112114.xyz/logo/多彩文体4K.png" group-title="4K测试",多彩文体4K
 http://www.rogerxlj.top:9998/rtp/233.18.204.205:5140
