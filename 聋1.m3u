@@ -1,0 +1,77 @@
+#EXTM3U x-tvg-url="https://11.112114.xyz/pp.xml"
+#EXTINF:-1 tvg-id="凤凰中文" tvg-name="凤凰中文" tvg-logo="https://11.112114.xyz/logo/凤凰中文.png" group-title="港澳台",凤凰中文
+https://cdn6.163189.xyz/163189/fhzw
+#EXTINF:-1 tvg-id="凤凰资讯" tvg-name="凤凰资讯" tvg-logo="https://11.112114.xyz/logo/凤凰资讯.png" group-title="港澳台",凤凰资讯
+https://cdn6.163189.xyz/163189/fhzx
+#EXTINF:-1 tvg-id="凤凰香港" tvg-name="凤凰香港" tvg-logo="https://11.112114.xyz/logo/凤凰香港.png" group-title="港澳台",凤凰香港
+https://cdn6.163189.xyz/163189/fhhk
+#EXTINF:-1 tvg-id="有线新闻" tvg-name="有线新闻" tvg-logo="https://11.112114.xyz/logo/有线新闻.png" group-title="港澳台",有线新闻
+https://cdn.163189.xyz/163189/hoy78
+#EXTINF:-1 tvg-id="有线综合" tvg-name="有线综合" tvg-logo="https://11.112114.xyz/logo/有线综合.png" group-title="港澳台",有线综合
+https://cdn6.163189.xyz/163189/hoy
+#EXTINF:-1 tvg-id="有线亚剧" tvg-name="有线亚剧" tvg-logo="https://11.112114.xyz/logo/有线亚剧.png" group-title="港澳台",有线亚剧
+https://cdn2.163189.xyz/163189/hoyjj
+#EXTINF:-1 tvg-id="无线新闻" tvg-name="无线新闻" tvg-logo="https://11.112114.xyz/logo/无线新闻.png" group-title="港澳台",无线新闻
+https://cdn6.163189.xyz/163189/wxxw
+#EXTINF:-1 tvg-id="无线翡翠" tvg-name="无线翡翠" tvg-logo="https://11.112114.xyz/logo/无线翡翠.png" group-title="港澳台",无线翡翠
+https://cdn6.163189.xyz/163189/fct
+#EXTINF:-1 tvg-id="无线翡翠" tvg-name="无线翡翠4K" tvg-logo="https://11.112114.xyz/logo/无线翡翠4K.png" group-title="港澳台",无线翡翠4K
+https://cdn6.163189.xyz/163189/fct4k
+#EXTINF:-1 tvg-id="无线华丽" tvg-name="无线华丽" tvg-logo="https://11.112114.xyz/logo/无线华丽.png" group-title="港澳台",无线华丽
+https://cdn6.163189.xyz/163189/hlfct
+#EXTINF:-1 tvg-id="无线明珠" tvg-name="无线明珠" tvg-logo="https://11.112114.xyz/logo/无线明珠.png" group-title="港澳台",无线明珠
+https://cdn6.163189.xyz/163189/mzt
+#EXTINF:-1 tvg-id="无线星河" tvg-name="无线星河" tvg-logo="https://11.112114.xyz/logo/无线星河.png" group-title="港澳台",无线星河
+https://cdn6.163189.xyz/163189/tvbxh
+#EXTINF:-1 tvg-id="无线功夫" tvg-name="无线功夫" tvg-logo="https://11.112114.xyz/logo/无线功夫.png" group-title="港澳台",无线功夫
+https://cdn6.163189.xyz/163189/yzwx
+#EXTINF:-1 tvg-id="澳视澳门" tvg-name="澳视澳门" tvg-logo="https://11.112114.xyz/logo/澳视澳门.png" group-title="港澳台",澳视澳门
+https://cdn6.163189.xyz/163189/asam
+#EXTINF:-1 tvg-id="澳视卫星" tvg-name="澳视卫星" tvg-logo="https://11.112114.xyz/logo/澳视卫星.png" group-title="港澳台",澳视卫星
+https://cdn6.163189.xyz/163189/as
+#EXTINF:-1 tvg-id="澳门体育" tvg-name="澳门体育" tvg-logo="https://11.112114.xyz/logo/澳门体育.png" group-title="港澳台",澳门体育
+https://cdn6.163189.xyz/163189/amty
+#EXTINF:-1 tvg-id="澳门综艺" tvg-name="澳门综艺" tvg-logo="https://11.112114.xyz/logo/澳门综艺.png" group-title="港澳台",澳门综艺
+https://cdn6.163189.xyz/163189/amzy
+#EXTINF:-1 tvg-id="澳门莲花" tvg-name="澳门莲花" tvg-logo="https://11.112114.xyz/logo/澳门莲花.png" group-title="港澳台",澳门莲花
+https://cdn6.163189.xyz/163189/amlh
+#EXTINF:-1 tvg-id="央视综合" tvg-name="央视综合" tvg-logo="https://11.112114.xyz/logo/央视综合.png" group-title="港澳台",央视综合
+https://cdn6.163189.xyz/163189/cctv1
+#EXTINF:-1 tvg-id="重温经典" tvg-name="重温经典" tvg-logo="https://11.112114.xyz/logo/重温经典.png" group-title="港澳台",重温经典
+https://cdn6.163189.xyz/163189/cwjd
+#EXTINF:-1 tvg-id="龙华电影" tvg-name="龙华电影" tvg-logo="https://11.112114.xyz/logo/龙华电影.png" group-title="港澳台",龙华电影
+https://cdn8.163189.xyz/163189/lhdy
+#EXTINF:-1 tvg-id="龙华经典" tvg-name="龙华经典" tvg-logo="https://11.112114.xyz/logo/龙华经典.png" group-title="港澳台",龙华经典
+https://cdn8.163189.xyz/163189/lhjd
+#EXTINF:-1 tvg-id="龙华偶像" tvg-name="龙华偶像" tvg-logo="https://11.112114.xyz/logo/龙华偶像.png" group-title="港澳台",龙华偶像
+https://cdn8.163189.xyz/163189/lhox
+#EXTINF:-1 tvg-id="龙华日韩" tvg-name="龙华日韩" tvg-logo="https://11.112114.xyz/logo/龙华日韩.png" group-title="港澳台",龙华日韩
+https://cdn8.163189.xyz/163189/lhrh
+#EXTINF:-1 tvg-id="龙华戏剧" tvg-name="龙华戏剧" tvg-logo="https://11.112114.xyz/logo/龙华戏剧.png" group-title="港澳台",龙华戏剧
+https://cdn8.163189.xyz/163189/lhxj
+#EXTINF:-1 tvg-id="CHU综合" tvg-name="CHU综合" tvg-logo="https://11.112114.xyz/logo/CHU综合.png" group-title="港澳台",CHU综合
+https://cdn6.163189.xyz/163189/chu
+#EXTINF:-1 tvg-id="CH5综合" tvg-name="CH5综合" tvg-logo="https://11.112114.xyz/logo/CH5综合.png" group-title="港澳台",CH5综合
+https://cdn6.163189.xyz/163189/ch5
+#EXTINF:-1 tvg-id="CH8综合" tvg-name="CH8综合" tvg-logo="https://11.112114.xyz/logo/CH8综合.png" group-title="港澳台",CH8综合
+https://cdn6.163189.xyz/163189/ch8
+#EXTINF:-1 tvg-id="八度空间" tvg-name="八度空间" tvg-logo="https://11.112114.xyz/logo/八度空间.png" group-title="港澳台",八度空间
+https://cdn6.163189.xyz/163189/8tv
+#EXTINF:-1 tvg-id="凤凰电影频道" tvg-name="凤凰电影频道" tvg-logo="https://11.112114.xyz/logo/凤凰电影频道.png" group-title="港澳台",凤凰电影频道
+http://122.224.58.42:85/tsfile/live/1022_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 tvg-id="星空卫视频道" tvg-name="星空卫视频道" tvg-logo="https://11.112114.xyz/logo/星空卫视频道.png" group-title="港澳台",星空卫视频道
+http://xhyx.gz.cn:1698/hls/35/index.m3u8
+#EXTINF:-1 tvg-id="香港C+_-频道" tvg-name="香港C+_-频道" tvg-logo="https://11.112114.xyz/logo/香港C+_-频道.png" group-title="港澳台",香港C+_-频道
+http://ottproxy2.ist.ooo/livehls/MOB-U1-NO/03.m3u8
+#EXTINF:-1 tvg-id="环球电视频道" tvg-name="环球电视频道" tvg-logo="https://11.112114.xyz/logo/环球电视频道.png" group-title="港澳台",环球电视频道
+http://utv1.hqtvzb.com:9999/hls/world.m3u8
+#EXTINF:-1 tvg-id="tvbs闽南频道" tvg-name="tvbs闽南频道" tvg-logo="https://11.112114.xyz/logo/tvbs闽南频道.png" group-title="港澳台",tvbs闽南频道
+http://61.221.215.25:8800/hls/9/index.m3u8
+#EXTINF:-1 tvg-id="三立戏剧频道" tvg-name="三立戏剧频道" tvg-logo="https://11.112114.xyz/logo/三立戏剧频道.png" group-title="港澳台",三立戏剧频道
+http://61.221.215.25:8800/hls/41/index.m3u8
+#EXTINF:-1 tvg-id="中天娱乐频道" tvg-name="中天娱乐频道" tvg-logo="https://11.112114.xyz/logo/中天娱乐频道.png" group-title="港澳台",中天娱乐频道
+http://61.221.215.25:8800/hls/47/index.m3u8
+#EXTINF:-1 tvg-id="纬来精彩频道" tvg-name="纬来精彩频道" tvg-logo="https://11.112114.xyz/logo/纬来精彩频道.png" group-title="港澳台",纬来精彩频道
+http://61.221.215.25:8800/hls/48/index.m3u8
+#EXTINF:-1 tvg-id="动物星球频道" tvg-name="动物星球频道" tvg-logo="https://11.112114.xyz/logo/动物星球频道.png" group-title="港澳台",动物星球频道
+http://61.221.215.25:8800/hls/57/index.m3u8
