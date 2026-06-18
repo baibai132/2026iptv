@@ -1,0 +1,28 @@
+#EXTM3U
+#EXTM3U
+#EXTINF:-1 group-title="亚太",凤凰中文
+http://cdn6.163189.xyz/163189/fhzw
+#EXTINF:-1 group-title="亚太",凤凰资讯
+http://cdn6.163189.xyz/163189/fhzx
+#EXTINF:-1 group-title="亚太",凤凰香港
+http://cdn6.163189.xyz/163189/fhhk
+#EXTINF:-1 group-title="亚太",NOW新闻
+http://cdn.163189.xyz/163189/now
+#EXTINF:-1 group-title="亚太",CH5
+http://cdn6.163189.xyz/163189/ch5
+#EXTINF:-1 group-title="亚太",CH8
+http://cdn6.163189.xyz/163189/ch8
+#EXTINF:-1 group-title="亚太",CHU
+http://cdn6.163189.xyz/163189/chu
+#EXTINF:-1 group-title="亚太",明珠台
+https://o11.163189.xyz/stream/tvb/mzt/
+#EXTINF:-1 group-title="亚太",中视
+rtmp://f13h.mine.nu/sat/tv091
+#EXTINF:-1 group-title="亚太",TVB Plus
+https://o11.163189.xyz/stream/tvb/tvbp/
+#EXTINF:-1 group-title="亚太",HOY77
+http://cdn6.163189.xyz/163189/hoy
+#EXTINF:-1 group-title="亚太",HOY78
+http://cdn.163189.xyz/163189/hoy78
+#EXTINF:-1 group-title="亚太",RTHK 32
+http://cdn.163189.xyz/163189/rthk32
