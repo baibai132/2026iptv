@@ -1,0 +1,28 @@
+亚太,#genre#
+凤凰中文,http://cdn6.163189.xyz/163189/fhzw
+凤凰资讯,http://cdn6.163189.xyz/163189/fhzx
+凤凰香港,http://cdn6.163189.xyz/163189/fhhk
+NOW新闻,http://cdn.163189.xyz/163189/now
+CH5,http://cdn6.163189.xyz/163189/ch5
+CH8,http://cdn6.163189.xyz/163189/ch8
+CHU,http://cdn6.163189.xyz/163189/chu
+明珠台,https://o11.163189.xyz/stream/tvb/mzt/
+中视,rtmp://f13h.mine.nu/sat/tv091
+TVB Plus,https://o11.163189.xyz/stream/tvb/tvbp/
+HOY77,http://cdn6.163189.xyz/163189/hoy
+HOY78,http://cdn.163189.xyz/163189/hoy78
+RTHK 32,http://cdn.163189.xyz/163189/rthk32
+TVBS亚洲,ttp://d2e1asnsl7br7b.cloudfront.net/7782e205e72f43aeb4a48ec97f66ebbe/index_5.m3u8?zshijd
+凤凰香港,http://r.jdshipin.com/yDoTN
+翡翠台,http://r.jdshipin.com/qClQf
+翡翠台,http://r.jdshipin.com/GeWKr
+翡翠台,http://cdn6.163189.xyz/163189/fct4k
+無線新聞,http://r.jdshipin.com/CkuBd
+明珠台,http://r.jdshipin.com/ZQ4kN
+VIUTV,http://php.jdshipin.com/TVOD/iptv.php?id=viutv
+HOY TV,http://r.jdshipin.com/sFw4S
+NOW NEWS,ttp://cdn.163189.xyz/163189/now
+Now 14, https://r.il.cdn-redge.media/livehls/oil/ch14/live/ch14/live.livx/playlist.m3u8
+NOW TV,https://uycyyuuzyh.turknet.ercdn.net/nphindgytw/nowtv/nowtv.m3u8
+NowMedia Television,https://stream-204968.castr.net/64e0c91d08bff3041638aee3/live_a4243540d4b911f0b624bda5e9a32aa9/tracks-v1/index.fmp4.m3u8
+
