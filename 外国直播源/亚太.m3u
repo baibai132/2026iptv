@@ -1,0 +1,46 @@
+#EXTINF:-1 tvg-name="翡翠台广电" group-title="All",翡翠台广电
+http://cdn6.163189.xyz/163189/fct
+#EXTINF:-1 tvg-name="翡翠台4K" group-title="All",翡翠台4K
+http://o11.163189.xyz/stream/tvb/fct4k/
+#EXTINF:-1 tvg-name="华丽翡翠台" group-title="All",华丽翡翠台
+http://cdn6.163189.xyz/163189/jade
+#EXTINF:-1 tvg-name="翡翠一台(TVB1)" group-title="All",翡翠一台(TVB1)
+http://cdn6.163189.xyz/163189/tvb1
+#EXTINF:-1 tvg-name="TVB翡翠剧集台" group-title="All",TVB翡翠剧集台
+http://cdn6.163189.xyz/163189/tvbd
+#EXTINF:-1 tvg-name="TVB 翡翠台" group-title="All",TVB 翡翠台
+http://8.138.7.223/tv/gdmzyd.php?id=1
+#EXTINF:-1 tvg-name="明珠台" group-title="All",明珠台
+http://o11.163189.xyz/stream/tvb/mzt/
+#EXTINF:-1 tvg-name="TVB明珠台" group-title="All",TVB明珠台
+http://cdn9.163189.xyz/smt1.1.php?id=pearl_twn
+#EXTINF:-1 tvg-name="无线新闻台" group-title="All",无线新闻台
+http://cdn6.163189.xyz/163189/wxxw
+#EXTINF:-1 tvg-name="凤凰中文高清" group-title="All",凤凰中文高清
+http://cdn6.163189.xyz/163189/fhzw
+#EXTINF:-1 tvg-name="凤凰资讯高清" group-title="All",凤凰资讯高清
+http://cdn6.163189.xyz/163189/fhzx
+#EXTINF:-1 tvg-name="HOY78" group-title="All",HOY78
+http://cdn.163189.xyz/live/hoy/stream.m3u8
+#EXTINF:-1 tvg-name="HOY77" group-title="All",HOY77
+http://cdn6.163189.xyz/163189/hoy
+#EXTINF:-1 tvg-name="RTHK 31" group-title="All",RTHK 31
+http://cdn.163189.xyz/163189/rthk31
+#EXTINF:-1 tvg-name="RTHK 32" group-title="All",RTHK 32
+http://cdn.163189.xyz/163189/rthk32
+#EXTINF:-1 tvg-name="RTHKTV31" group-title="All",RTHKTV31
+https://rthktv31-live.akamaized.net/hls/live/2036818/RTHKTV31/master.m3u8
+#EXTINF:-1 tvg-name="NOW NEWS" group-title="All",NOW NEWS
+http://cdn.163189.xyz/163189/now
+#EXTINF:-1 tvg-name="HEi Now (1080p)" group-title="All",HEi Now (1080p)
+https://copacogen.desdeparaguay.net/heitv/heitv_py_alta/playlist.m3u8?admin=nacion
+#EXTINF:-1 tvg-name="NOW TV (720p)" group-title="All",NOW TV (720p)
+https://uycyyuuzyh.turknet.ercdn.net/nphindgytw/nowtv/nowtv.m3u8
+#EXTINF:-1 tvg-name="Now TVNEWS" group-title="All",Now TVNEWS
+http://cdn.163189.xyz/163189/now
+#EXTINF:-1 tvg-name="Now TV70s" group-title="All",Now TV70s
+https://lightning-now70s-rakuten.amagi.tv/hls/amagi_hls_data_rakutenAA-lightning-now70s-rakuten/CDN/playlist.m3u8
+#EXTINF:-1 tvg-name="Now TV90s00s" group-title="All",Now TV90s00s
+https://amg01076-amg01076c19-rakuten-gb-8653.playouts.now.amagi.tv/playlist/amg01076-lightning-now90s00s-rakutengb/playlist.m3u8
+#EXTINF:-1 tvg-name="NOW新闻" group-title="All",NOW新闻
+http://cdn.163189.xyz/163189/now
