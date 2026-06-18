@@ -1,0 +1,24 @@
+All,#genre#
+翡翠台广电,http://cdn6.163189.xyz/163189/fct
+翡翠台4K,http://o11.163189.xyz/stream/tvb/fct4k/
+华丽翡翠台,http://cdn6.163189.xyz/163189/jade
+翡翠一台(TVB1),http://cdn6.163189.xyz/163189/tvb1
+TVB翡翠剧集台,http://cdn6.163189.xyz/163189/tvbd
+TVB 翡翠台,http://8.138.7.223/tv/gdmzyd.php?id=1
+明珠台,http://o11.163189.xyz/stream/tvb/mzt/
+TVB明珠台,http://cdn9.163189.xyz/smt1.1.php?id=pearl_twn
+无线新闻台,http://cdn6.163189.xyz/163189/wxxw
+凤凰中文高清,http://cdn6.163189.xyz/163189/fhzw
+凤凰资讯高清,http://cdn6.163189.xyz/163189/fhzx
+HOY78,http://cdn.163189.xyz/live/hoy/stream.m3u8
+HOY77,http://cdn6.163189.xyz/163189/hoy
+RTHK 31,http://cdn.163189.xyz/163189/rthk31
+RTHK 32,http://cdn.163189.xyz/163189/rthk32
+RTHKTV31,https://rthktv31-live.akamaized.net/hls/live/2036818/RTHKTV31/master.m3u8
+NOW NEWS,http://cdn.163189.xyz/163189/now
+HEi Now (1080p),https://copacogen.desdeparaguay.net/heitv/heitv_py_alta/playlist.m3u8?admin=nacion
+NOW TV (720p),https://uycyyuuzyh.turknet.ercdn.net/nphindgytw/nowtv/nowtv.m3u8
+Now TVNEWS,http://cdn.163189.xyz/163189/now
+Now TV70s,https://lightning-now70s-rakuten.amagi.tv/hls/amagi_hls_data_rakutenAA-lightning-now70s-rakuten/CDN/playlist.m3u8
+Now TV90s00s,https://amg01076-amg01076c19-rakuten-gb-8653.playouts.now.amagi.tv/playlist/amg01076-lightning-now90s00s-rakutengb/playlist.m3u8
+NOW新闻,http://cdn.163189.xyz/163189/now
