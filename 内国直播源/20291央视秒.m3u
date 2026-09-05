@@ -42,32 +42,32 @@ CCTV8,http://38.75.136.137:98/gslb/dsdqpub/cctv8k.m3u8?auth=testpub
 
 
 
-#EXTM3U x-tvg-url="https://11.112114.xyz/pp.xml"
-#EXTINF:-1 tvg-id="CCTV-电视指南" tvg-name="CCTV-电视指南" tvg-logo="https://raw.githubusercontent.com/baibai132/live/refs/heads/main/tv/CCTV-电视指南.png" group-title="央视",CCTV-电视指南
+
+#EXTINF:-1 tvg-id="CCTV-电视指南" tvg-name="CCTV-电视指南" tvg-logo="https://raw.githubusercontent.com/baibai132/live/refs/heads/main/tv/电视指南.png" group-title="央视",CCTV-电视指南
 http://38.75.136.137:98/gslb/dsdqpub/dszn.m3u8?auth=testpub
-#EXTINF:-1 tvg-id="CCTV-第一剧场" tvg-name="CCTV-第一剧场" tvg-logo="https://raw.githubusercontent.com/baibai132/live/refs/heads/main/tv/CCTV-第一剧场.png" group-title="央视",CCTV-第一剧场
+#EXTINF:-1 tvg-id="CCTV-第一剧场" tvg-name="CCTV-第一剧场" tvg-logo="https://raw.githubusercontent.com/baibai132/live/refs/heads/main/tv/第一剧场.png" group-title="央视",CCTV-第一剧场
 http://38.75.136.137:98/gslb/dsdqpub/dyjc.m3u8?auth=testpub
-#EXTINF:-1 tvg-id="CCTV-风云剧场" tvg-name="CCTV-风云剧场" tvg-logo="https://raw.githubusercontent.com/baibai132/live/refs/heads/main/tv/CCTV-风云剧场.png" group-title="央视",CCTV-风云剧场
+#EXTINF:-1 tvg-id="CCTV-风云剧场" tvg-name="CCTV-风云剧场" tvg-logo="https://raw.githubusercontent.com/baibai132/live/refs/heads/main/tv/风云剧场.png" group-title="央视",CCTV-风云剧场
 http://38.75.136.137:98/gslb/dsdqpub/fyjc.m3u8?auth=testpub
-#EXTINF:-1 tvg-id="CCTV-风云音乐" tvg-name="CCTV-风云音乐" tvg-logo="https://raw.githubusercontent.com/baibai132/live/refs/heads/main/tv/CCTV-风云音乐.png" group-title="央视",CCTV-风云音乐
+#EXTINF:-1 tvg-id="CCTV-风云音乐" tvg-name="CCTV-风云音乐" tvg-logo="https://raw.githubusercontent.com/baibai132/live/refs/heads/main/tv/风云音乐.png" group-title="央视",CCTV-风云音乐
 http://38.75.136.137:98/gslb/dsdqpub/fyyy.m3u8?auth=testpub
-#EXTINF:-1 tvg-id="CCTV-风云足球" tvg-name="CCTV-风云足球" tvg-logo="https://raw.githubusercontent.com/baibai132/live/refs/heads/main/tv/CCTV-风云足球.png" group-title="央视",CCTV-风云足球
+#EXTINF:-1 tvg-id="CCTV-风云足球" tvg-name="CCTV-风云足球" tvg-logo="https://raw.githubusercontent.com/baibai132/live/refs/heads/main/tv/风云足球.png" group-title="央视",CCTV-风云足球
 http://38.75.136.137:98/gslb/dsdqpub/fyzq.m3u8?auth=testpub
-#EXTINF:-1 tvg-id="CCTV-高尔夫网球" tvg-name="CCTV-高尔夫网球" tvg-logo="https://raw.githubusercontent.com/baibai132/live/refs/heads/main/tv/CCTV-高尔夫网球.png" group-title="央视",CCTV-高尔夫网球
+#EXTINF:-1 tvg-id="CCTV-高尔夫网球" tvg-name="CCTV-高尔夫网球" tvg-logo="https://raw.githubusercontent.com/baibai132/live/refs/heads/main/tv/高尔夫网球.png" group-title="央视",CCTV-高尔夫网球
 http://38.75.136.137:98/gslb/dsdqpub/gefwq.m3u8?auth=testpub
-#EXTINF:-1 tvg-id="CCTV-兵器科技" tvg-name="CCTV-兵器科技" tvg-logo="https://raw.githubusercontent.com/baibai132/live/refs/heads/main/tv/CCTV-兵器科技.png" group-title="央视",CCTV-兵器科技
+#EXTINF:-1 tvg-id="CCTV-兵器科技" tvg-name="CCTV-兵器科技" tvg-logo="https://raw.githubusercontent.com/baibai132/live/refs/heads/main/tv/兵器科技.png" group-title="央视",CCTV-兵器科技
 http://38.75.136.137:98/gslb/dsdqpub/gfjs.m3u8?auth=testpub
-#EXTINF:-1 tvg-id="CCTV-女性时尚" tvg-name="CCTV-女性时尚" tvg-logo="https://raw.githubusercontent.com/baibai132/live/refs/heads/main/tv/CCTV-女性时尚.png" group-title="央视",CCTV-女性时尚
+#EXTINF:-1 tvg-id="CCTV-女性时尚" tvg-name="CCTV-女性时尚" tvg-logo="https://raw.githubusercontent.com/baibai132/live/refs/heads/main/tv/女性时尚.png" group-title="央视",CCTV-女性时尚
 http://38.75.136.137:98/gslb/dsdqpub/nxss.m3u8?auth=testpub
-#EXTINF:-1 tvg-id="CCTV-世界地理" tvg-name="CCTV-世界地理" tvg-logo="https://raw.githubusercontent.com/baibai132/live/refs/heads/main/tv/CCTV-世界地理.png" group-title="央视",CCTV-世界地理
+#EXTINF:-1 tvg-id="CCTV-世界地理" tvg-name="CCTV-世界地理" tvg-logo="https://raw.githubusercontent.com/baibai132/live/refs/heads/main/tv/世界地理.png" group-title="央视",CCTV-世界地理
 http://38.75.136.137:98/gslb/dsdqpub/sjdl.m3u8?auth=testpub
-#EXTINF:-1 tvg-id="CCTV-怀旧剧场" tvg-name="CCTV-怀旧剧场" tvg-logo="https://raw.githubusercontent.com/baibai132/live/refs/heads/main/tv/CCTV-怀旧剧场.png" group-title="央视",CCTV-怀旧剧场
+#EXTINF:-1 tvg-id="CCTV-怀旧剧场" tvg-name="CCTV-怀旧剧场" tvg-logo="https://raw.githubusercontent.com/baibai132/live/refs/heads/main/tv/怀旧剧场.png" group-title="央视",CCTV-怀旧剧场
 http://38.75.136.137:98/gslb/dsdqpub/hjjc.m3u8?auth=testpub
-#EXTINF:-1 tvg-id="CCTV-央视台球" tvg-name="CCTV-央视台球" tvg-logo="https://raw.githubusercontent.com/baibai132/live/refs/heads/main/tv/CCTV-央视台球.png" group-title="央视",CCTV-央视台球
+#EXTINF:-1 tvg-id="CCTV-央视台球" tvg-name="CCTV-央视台球" tvg-logo="https://raw.githubusercontent.com/baibai132/live/refs/heads/main/tv/央视台球.png" group-title="央视",CCTV-央视台球
 http://38.75.136.137:98/gslb/dsdqpub/ystq.m3u8?auth=testpub
-#EXTINF:-1 tvg-id="中央新影-老故事" tvg-name="中央新影-老故事" tvg-logo="https://raw.githubusercontent.com/baibai132/live/refs/heads/main/tv/中央新影-老故事.png" group-title="央视",中央新影-老故事
+#EXTINF:-1 tvg-id="中央新影-老故事" tvg-name="中央新影-老故事" tvg-logo="https://raw.githubusercontent.com/baibai132/live/refs/heads/main/tv/老故事.png" group-title="央视",中央新影-老故事
 http://38.75.136.137:98/gslb/dsdqpub/lgs.m3u8?auth=testpub
-#EXTINF:-1 tvg-id="中央新影-发现之旅" tvg-name="中央新影-发现之旅" tvg-logo="https://raw.githubusercontent.com/baibai132/live/refs/heads/main/tv/中央新影-发现之旅.png" group-title="央视",中央新影-发现之旅
+#EXTINF:-1 tvg-id="中央新影-发现之旅" tvg-name="中央新影-发现之旅" tvg-logo="https://raw.githubusercontent.com/baibai132/live/refs/heads/main/tv/发现之旅.png" group-title="央视",中央新影-发现之旅
 http://38.75.136.137:98/gslb/dsdqpub/fxzl.m3u8?auth=testpub
 #EXTINF:-1 tvg-id="国学频道" tvg-name="国学频道" tvg-logo="https://raw.githubusercontent.com/baibai132/live/refs/heads/main/tv/国学频道.png" group-title="其他",国学频道
 http://38.75.136.137:98/gslb/dsdqpub/gxpd.m3u8?auth=testpub
@@ -75,4 +75,3 @@ http://38.75.136.137:98/gslb/dsdqpub/gxpd.m3u8?auth=testpub
 http://38.75.136.137:98/gslb/dsdqpub/gztywq.m3u8?auth=testpub
 #EXTINF:-1 tvg-id="优漫卡通" tvg-name="优漫卡通" tvg-logo="https://raw.githubusercontent.com/baibai132/live/refs/heads/main/tv/优漫卡通.png" group-title="其他",优漫卡通
 http://38.75.136.137:98/gslb/dsdqpub/ymkt.m3u8?auth=testpub
-
