@@ -2,7 +2,7 @@
 
 
 20269动漫
-https://raw.githubusercontent.com/baibai132/2026iptv/refs/heads/main/20269%E5%8A%A8%E6%BC%AB/Dragon-Ball-Cover.jpg
+![KVideo Banner](20269动漫/Dragon-Ball-Cover.jpg)
 1986龙珠153集
 https://raw.githubusercontent.com/baibai132/2026iptv/refs/heads/main/20269%E5%8A%A8%E6%BC%AB/1986%E9%BE%99%E7%8F%A0153%20%E9%9B%86.m3u
 
