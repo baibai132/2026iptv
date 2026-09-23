@@ -1,0 +1,7 @@
+超龙珠英雄MM	
+"第1集,"	https://svip.high20-playback.com/20240508/50428_ba3741ee/2000k/hls/mixed.m3u8
+"第2集,"	https://svip.high20-playback.com/20240508/50427_9a5977bc/2000k/hls/mixed.m3u8
+"第3集,"	https://svip.high20-playback.com/20240508/50426_479e6724/2000k/hls/mixed.m3u8
+"第4集,"	https://svip.high24-playback.com/20241003/6727_a9754435/2000k/hls/mixed.m3u8
+"第5集,"	https://svip.high24-playback.com/20241003/6726_96a2c54b/2000k/hls/mixed.m3u8
+"第6集,"	https://svip.high24-playback.com/20241003/6728_34c83c7f/2000k/hls/mixed.m3u8
